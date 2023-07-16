@@ -1,0 +1,120 @@
+:root{
+    --darkgreen:#00425A;
+    --orange:#FC7300;
+    --white:#ffffff;
+
+}
+body{
+    margin: 0;
+    background: linear-gradient(to right,rgb(54, 104, 54),rgb(23, 54, 23));
+}
+header a{
+    color: var(--white);
+    text-decoration: none;
+}
+header{
+    display: flex;
+    padding: 1em;
+    font-size: 1.25em;
+    
+}
+
+header #logo{
+    flex: 3;
+    font-size: 1.50em;
+}
+
+nav{
+    flex: 2;
+    display: flex;
+}
+
+nav a{
+    flex: 1;
+    padding: 0px 5px;
+    position: relative;
+    top:0;
+    transition: top ease 0.5s;
+
+    
+}
+nav a:hover{
+    color: var(--darkgreen);
+    top:-5px;
+
+}
+
+/* contact form */
+
+#contact{
+    display: flex;
+    justify-content: center;
+    color: var(--orange) ;
+    font-size: 2em;
+}
+
+#form{
+    
+    width: 400px;
+    margin: 20vh auto 0 auto;
+    
+}
+.inputgroup{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.inputgroup input{
+           padding: 5px;
+           width: 100%;
+           box-sizing: border-box;
+           margin-top: 5px;
+           font-size: medium;
+           font-weight: bold;
+           color: var(--white);
+           border-radius: 5px;
+}
+.inputgroup textarea{
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-size: medium;
+     font-weight: bold;
+     color: var(--white);
+}
+.inputgroup label{
+    color: var(--white);
+    font-size: 1.25em;
+}
+.inputgroup input:focus{
+    outline: 0;
+    background-color: rgb(189, 233, 189);
+}
+
+.inputgroup textarea:focus{
+    outline: 0;
+    background-color: rgb(189, 233, 189);
+}
+
+#form button{
+    background-color: #00425A;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    width: 20%;
+    color: #ffffff;
+    font-size: medium;
+    cursor: pointer;
+}
+
+.footer{
+    background: linear-gradient(to right,rgb(5, 87, 5),rgb(1, 26, 1));
+    color: var(--white);
+    font-size: small;
+    font-weight: bold;
+}
+
+header nav a i{
+    margin-right: .5em;
+}
